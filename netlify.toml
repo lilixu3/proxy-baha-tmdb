@@ -1,0 +1,18 @@
+# 代理 TMDB API（带前缀）
+[[redirects]]
+  from = "/tmdb/*"
+  to = "https://api.themoviedb.org/3/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    Content-Type = "application/json"
+
+# 代理巴哈姆特 API（默认路径，必须放在最后）
+[[redirects]]
+  from = "baha/*"
+  to = "https://api.gamer.com.tw/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    User-Agent = "Anime/2.29.2 (7N5749MM3F.tw.com.gamer.anime; build:972; iOS 26.0.0) Alamofire/5.6.4"
+    Content-Type = "application/json"
