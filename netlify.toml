@@ -1,7 +1,7 @@
 # 代理 TMDB API（带前缀）
 [[redirects]]
   from = "/tmdb/*"
-  to = "https://api.themoviedb.org/3/:splat"
+  to = "https://api.themoviedb.org/:splat"
   status = 200
   force = true
   [redirects.headers]
